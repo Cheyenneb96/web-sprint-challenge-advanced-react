@@ -10,13 +10,14 @@ const useForm = (initialValue) =>{
         };
     
         const handleSubmit = (e) => {
+            console.log('here',)
         e.preventDefault();
         setShowSuccessMessage(true);
         };
 
         
   
-    return([values, handleChanges,handleSubmit]);
+    return([values, showSuccessMessage, handleChanges,handleSubmit]);
 }
 
 export default useForm;
